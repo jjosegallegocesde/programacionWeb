@@ -21,3 +21,7 @@ body{
  background-attachment: fixed;
  background-position: top center;
 }
+
+.editCard{
+    background-color: rgba(0,0,0,.30)!important; 
+}
