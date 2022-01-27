@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina principal</title>
+    <title>Disney - Home</title>
 
     <!--LINKSSS CSSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Universal.css">
     <!--LINKSSS LETRA-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,80 +17,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+  <!--MENU-->
     <header class="animate__animated animate__fadeInDown">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-        <h1 class="titulos">Disney 
-          <i class="fas fa-magic icono"></i>
-        </h1>
-                    
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Pagina Principal</a>
-        <a class="nav-link" href="views/tienda.html">Shop</a>
-        <a class="nav-link" href="views/acercade.html">Acerca de</a>
-        <a class="nav-link ">Shop</a>
-        </div>
-        </div>
-        </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <img src="/img/logoDisney.png" alt="" class="logo">
+              <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-3">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  <a class="nav-link" href="views/tienda.html">SHOP</a>
+                  <a class="nav-link" href="views/acercade.html">ABOUT</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
         
-      
-
-    <main>
-
-        <section class="">
-          <img class="img-fluid w-100" src="img/imagen hd.jpg" alt="CASTILLO DE DISNEY">
-        </section>
-
-        <div class="wow container mt-4 animate__animated animate__fadeInDown">
-              <div class="row d-flex justify-content-center">
-                  <div class="col-12 col-md-4">
-                      <img src="img/mini.png" alt="Minni Maus - No se encontro la imagen" class="img-fluid w-100">
-                  </div>
-                  <div class="col-12 col-md-4 align-self-center">
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam nisi minima aspernatur unde. Eum sed eaque dicta minus temporibus tempora ut fuga assumenda quia? Consectetur itaque nesciunt vero architecto?
-                      </p>
-                      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                          Registrate
-                          <i class="fas fa-sign-in-alt"></i>
-                        </button>
-                  </div>
-              </div>
-          </div>
+     <main>
+        
+          <!--BANNER-->
           <section>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <div>
-                      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                        Dropdown button
-                      </button>
-                    
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Tienda</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/parques/banner2.jpg" class="d-block w-100" alt="Parque disney orlando">
                 </div>
+                <div class="carousel-item">
+                  <img src="/img/parques/banner1.jpg" class="d-block w-100" alt="parque disney ">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/parques/banner3.jpg" class="d-block w-100" alt="parque disney">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           
+          </section>
+     
+
+          <!--PESTAÑITA DE REGISTRARSE-->
+          <section>
+            
           </section>
 
+          <section>
+            <div class="container">
+              <h1>Conoce nuestros parques tematicos</h1>
+              <div class="row row-cols-1 row-cols-md-5 g-3" id="fila">
+              </div>
+            </div>
+           
+
+          </section>
+          
+          <!--FONDO PRINCIPAL-->
           <section class="fondobanner">
 
           </section>
 
-          
-
+          <!--TEXTO-->
           <section>
               <div class="container">
                   <div class="row">
@@ -98,71 +95,61 @@
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero distinctio necessitatibus quam amet quod, deleniti perspiciatis quo nihil quasi esse provident nulla nam, sed, similique laboriosam. Ipsa ut iure saepe eius, incidunt consequuntur magnam nulla eaque dignissimos, veritatis et fugiat cupiditate numquam error, placeat debitis recusandae laboriosam quidem quam voluptatibus magni quisquam ea. Similique sint, temporibus eligendi illum inventore blanditiis nesciunt harum corrupti laborum alias expedita veniam dicta culpa, magnam provident maxime obcaecati aliquam? Nostrum unde quaerat aliquam, maiores omnis voluptatum fugit accusamus vitae? Sequi iusto quod illum deserunt voluptate cupiditate a unde odit hic et autem rerum sunt dolor placeat, asperiores sed, harum qui recusandae minima ex, ut veritatis quidem est. Corrupti voluptatum illum impedit quis inventore labore odio debitis tempora laudantium perspiciatis deleniti perferendis sint itaque, possimus, omnis qui magni soluta numquam non doloremque animi tenetur a. Quaerat facere, quae possimus necessitatibus, obcaecati eos culpa doloremque voluptatem aperiam expedita tempora nesciunt! Vitae, mollitia repudiandae eius unde possimus ipsam atque laboriosam officiis beatae aliquam! Magni accusamus repellat nostrum eligendi dignissimos, quos sed necessitatibus unde facere vero ipsa iusto amet quisquam animi perferendis quis. Odio architecto sequi a, repellendus laborum dignissimos voluptas minus minima, ipsa, quos eaque dolores numquam!</p>
                       </div>
                   </div>
+          </section>
+
+          <!--CARDS-->
+          <section class="my-5 p-5 wow  mt-4 animate__animated animate__fadeInDown">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-md-5 g-3">
+                 
+                </div>
               </div>
           </section>
 
-        <section class="my-5 p-5 wow  mt-4 animate__animated animate__fadeInDown">
-            <div class="container">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card h-100 editCard">
-                    <img src="img/bella.jfif" class="card-img-top" alt="PRINCESA BELLA">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>           
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 editCard">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      
-                    </div>  
-                    <img src="img/blancanieves.jfif" class="card-img-top" alt="PRINCESA BLANCANIVES">         
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 editCard">
-                    <img src="img/jazmin.jfif" class="card-img-top" alt="PRINCESA jazmin">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>           
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          </section>
+        </div>
+     </main>
 
-    </main>
-
-    <footer class="bg-dark mt-4 p-3 text-white">
+    <footer class="bg-white mt-4 p-3 text-center">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam laborum inventore tenetur exercitationem temporibus adipisci ratione, esse amet debitis expedita ad accusamus ipsam ut quia ducimus laboriosam, doloremque totam.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nobis in quod tempora voluptas laboriosam rem quidem ipsa dolorum tempore voluptatum delectus unde minus, est error ea dicta sapiente incidunt!
+          <div class="col-2">
+            <h4>Disney&copy;</h4>
+            <p>Todos los derechos reservados.</p>
+          </div>
+          <div class="col-2">
+            <p>Ayuda y servicios para Huéspedes</p>
+          </div>
+          <div class="col-2">
+            <p> Mapa del Sitio </p>
+          </div>
+          <div class="col-2">
+            <p>Términos de Uso</p>
+          </div>
+          <div class="col-2">
+            <p> Avisos Legales</p>
+          </div>
+          <div class="col-2">
+            <p> Política de Privacidad</p>
+          </div>
+          <pre>
+            Disney Vacations, LLC
+            PO Box 10250
+            Lake Buena Vista, FL 32830-0250 | 81-2564985
+            ContactUs@DisneyVacationsLLC.com
+            +1 (407) 827-7157
+          </pre>
+            <hr>
+            <p>Se aplicarán cargos por llamadas internacionales cuando llames a Disney desde fuera de los Estados Unidos
             </p>
-          </div>
-          <div class="col-12 col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nam incidunt! Dolorum fugiat molestias, non, aliquam delectus nostrum quia sint debitis, quibusdam itaque quasi deserunt! Illo ipsum at vero illum sunt velit nostrum odio voluptatum, veritatis, saepe modi magni, laudantium reiciendis dignissimos facere voluptate nesciunt corrupti dolor sequi soluta voluptas nemo exercitationem. Velit blanditiis eligendi nisi perspiciatis? Magnam, aperiam totam rem optio, nemo in saepe vel dignissimos eveniet ratione unde, suscipit veniam? Ipsam accusantium, id assumenda distinctio enim nemo eos cupiditate et expedita exercitationem, necessitatibus quos consequatur perferendis? Expedita ducimus animi quo quae. Cum ullam sint quisquam a sed quos!</p>
-          </div>
-          <div class="col-12 col-md-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda nam, saepe deleniti amet quia dolorem. Iure, doloremque blanditiis quo recusandae neque enim nesciunt voluptatibus quam repellat, optio ab qui expedita, modi mollitia! Amet, nesciunt animi, perferendis distinctio vero alias dolorem, minima quae ab impedit a maiores omnis nihil sed mollitia tempore porro atque placeat veniam? Suscipit facere, aliquam magnam dolorem cum, assumenda officiis libero obcaecati, amet esse sunt dolore exercitationem!
-              KAREN ESTEFANIA RODRIGUEZ &copy;</p>
-          </div>
-        </div>
+             <p>KAREN ESTEFANIA RODRIGUEZ &copy;</p>
+       
+        
       </div>
     </footer>
+
     <!--LINKSSS JSCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!--LINKSSS FONTAWESOME Para el logo-->
-    <script src="https://kit.fontawesome.com/550ba93185.js" crossorigin="anonymous"></script>
+
     <!--LINK DE WOW-->
     <script src="wow.min.js"></script>
     <script>
