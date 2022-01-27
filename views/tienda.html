@@ -12,12 +12,17 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Puppies+Play&display=swap" rel="stylesheet">
-</head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    </head>
+
+
 <body>
     <header class="animate__animated animate__fadeInDown">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <img src="/img/logoDisney.png" alt="" class="logo">
+            <img src="../img/logoDisney.png" alt="" class="logo">
               <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-3">
                   <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
@@ -38,6 +43,43 @@
       </div>
     </main>
 
+    <!---->
+    <section>
+      <!-- Modal -->
+      <div class="modal fade" id="modalInfoProducto">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-info">
+              <h5 class="modal-title">Tienda Disney</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <div class="container">
+               <div class="row">
+                 <div class="col-12 col-md-4">
+                  <img src="../img/productos/cenicienta.jpg" class="img-fluid w-100" alt="imagenProducto">
+                 </div>
+                 <div class="col col-md-8">
+                  <h4 id="nombreProducto">Cenicienta</h4>
+                  <h6 id="precioProducto">20000</h6>
+                  <h6 id="descripcionProducto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut quidem deserunt. Recusandae, vitae fuga! Praesentium, est eius! Nesciunt necessitatibus eius expedita ex veniam rerum incidunt assumenda soluta at animi?</h6>
+                  <div class="mb-3">
+                    <label class="form-label">cantidad</label>
+                    <input type="number" class="form-control" id="cantidadProducto" value="1" min="0">
+                  </div>
+                 </div>
+               </div>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
 
     </footer>
@@ -48,6 +90,7 @@
     <script>
     new WOW().init();
     </script>
+    <!--SE COLOCA MODULAR -->
     <script src="../js/controlador.js" type="module"></script>
 </body>
 </html>

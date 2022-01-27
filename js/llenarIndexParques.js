@@ -1,3 +1,4 @@
+/*
 export function llenarParques(){
     let parques = [
        {parque:"", im},
@@ -9,7 +10,7 @@ export function llenarParques(){
     let fila= document.getElementById("fila")
     /*
     1. arreglo que voy a utilizar
-    2. */
+   
     productos.forEach(function(producto){
         //creamos la etiqueta div
         let columna=document.createElement("div")
@@ -47,4 +48,4 @@ export function llenarParques(){
         tarjeta.appendChild(descripcionProducto)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
-    })
+    })*/

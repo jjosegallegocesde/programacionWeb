@@ -13,7 +13,7 @@ export function llenarTienda(){
         {nombre:"Collar Raya",precio:30000,foto:"../img/productos/collarRaya.jpg",decripcion:"Collar de la pelicula Raya, alumbra en la oscuridad con pilas recargables"},
         {nombre:"Kit de muñecas Raya",precio:230000,foto:"../img/productos/kitPrincesas.jpg",decripcion:"Set de 3 muñecas de 20 cm de la pelicula raya"},
     ]
-
+    //fila es la row 
     let fila= document.getElementById("fila")
     /*
     1. arreglo que voy a utilizar
@@ -27,32 +27,52 @@ export function llenarTienda(){
         let tarjeta = document.createElement("div")
         tarjeta.classList.add("card")
         tarjeta.classList.add("h-100")
-    
+
         let imagen = document.createElement("img")
         imagen.classList.add("card-img-top")
-        imagen.classList.add("h-50")
+        imagen.classList.add("h-100")
         imagen.classList.add("p-3")
         imagen.src=producto.foto
+
+        let separador = document.createElement("hr")
+        separador.classList.add("w-50")
+        separador.classList.add("mx-auto")
+        separador.classList.add("d-block")
+
+
+        let cuadroTexto = document.createElement("div")
+        cuadroTexto.classList.add("px-3")
+        cuadroTexto.classList.add("text-center")
     
-        
         let nombreProducto = document.createElement("h4")
         nombreProducto.textContent=producto.nombre
-        nombreProducto.classList.add("text-center")
-    
+
         let precioProducto = document.createElement("h6")
         precioProducto.textContent=("Precio: $"+producto.precio)
-        precioProducto.classList.add("text-center")
-    
-        
+        precioProducto.classList.add("text-muted")
+
+        let btnAmpliarInfo = document.createElement("button")
+        btnAmpliarInfo.setAttribute("type","button")
+        btnAmpliarInfo.classList.add("btn")
+        btnAmpliarInfo.classList.add("btn-outline-info")
+        btnAmpliarInfo.classList.add("mb-3")
+        btnAmpliarInfo.textContent="Mas informacion"
+
         let descripcionProducto = document.createElement("h6")
         descripcionProducto.textContent=("Descripcion: "+producto.decripcion)
-        descripcionProducto.classList.add("text-center")
+        descripcionProducto.classList.add("text-muted")
+
 
         //Padres e hijos 
+        
+        cuadroTexto.appendChild(nombreProducto)
+        cuadroTexto.appendChild(precioProducto)
+        cuadroTexto.appendChild(btnAmpliarInfo)
+
         tarjeta.appendChild(imagen)
-        tarjeta.appendChild(nombreProducto)
-        tarjeta.appendChild(precioProducto)
-        tarjeta.appendChild(descripcionProducto)
+        tarjeta.appendChild(separador)
+        tarjeta.appendChild(cuadroTexto)
+        
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
     })
