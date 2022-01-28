@@ -1,17 +1,15 @@
-/*
 export function llenarParques(){
-    let parques = [
-       {parque:"", im},
-       {parque:"", im},
-       {parque:"", im}
-
+    let arregloParques = [
+       {nombreParque:"Magic Kingdom Park", img:"../img/parques/Parque1.jpg",descripcionParque: "Explora tierras de encanto infinito, donde tus fantasías se convierten en realidad"},
+       {nombreParque:"Disney's Hollywood Studios", img:"../img/parques/Parque2.jpg",descripcionParque: "Que empiece tu aventura con momentos emocionantes que  te esperan en cada esquina Horarios de los Parques"},
+       {nombreParque:"Disney's Typhoon Lagoon", img:"../img/parques/Parque3.jpg",descripcionParque: "Empápate de acción"}
     ]
 
-    let fila= document.getElementById("fila")
+    let parques = document.getElementById("parques")
     /*
     1. arreglo que voy a utilizar
-   
-    productos.forEach(function(producto){
+   */
+    arregloParques.forEach(function(parque){
         //creamos la etiqueta div
         let columna=document.createElement("div")
         //a columna le agregagamos la clase col
@@ -22,30 +20,26 @@ export function llenarParques(){
         tarjeta.classList.add("h-100")
     
         let imagen = document.createElement("img")
-        imagen.classList.add("card-img-top")
+        imagen.classList.add("rounded-circle")
+        imagen.classList.add("img-fluid")
         imagen.classList.add("h-50")
         imagen.classList.add("p-3")
-        imagen.src=producto.foto
+        imagen.src=parque.foto
     
-        
-        let nombreProducto = document.createElement("h4")
-        nombreProducto.textContent=producto.nombre
-        nombreProducto.classList.add("text-center")
+        let nombreParque = document.createElement("h4")
+        nombreParque.textContent=arregloParques
+        nombreParque.classList.add("text-center")
     
-        let precioProducto = document.createElement("h6")
-        precioProducto.textContent=("Precio: $"+producto.precio)
-        precioProducto.classList.add("text-center")
+        let descripcionParque = document.createElement("h6")
+        descripcionParque.textContent="Descripcion: "+parque.descripcionParque
+        descripcionParque.classList.add("text-center")
     
-        
-        let descripcionProducto = document.createElement("h6")
-        descripcionProducto.textContent=("Descripcion: "+producto.decripcion)
-        descripcionProducto.classList.add("text-center")
-
         //Padres e hijos 
         tarjeta.appendChild(imagen)
-        tarjeta.appendChild(nombreProducto)
-        tarjeta.appendChild(precioProducto)
-        tarjeta.appendChild(descripcionProducto)
+        tarjeta.appendChild(nombreParque)
+        tarjeta.appendChild(descripcionParque)
         columna.appendChild(tarjeta)
-        fila.appendChild(columna)
-    })*/
+        parques.appendChild(columna)
+
+    })
+}

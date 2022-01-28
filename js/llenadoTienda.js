@@ -76,6 +76,4 @@ export function llenarTienda(){
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
     })
-
-
 }
